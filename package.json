@@ -1,0 +1,39 @@
+{
+  "name": "@nashanunais/npm-package",
+  "version": "1.1.5",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "mock",
+    "data",
+    "faker",
+    "typescript",
+    "utility"
+  ],
+  "author": "nashanunais",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.0.0"
+  }
+}
