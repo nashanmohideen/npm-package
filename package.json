@@ -1,6 +1,6 @@
 {
   "name": "@nashanunais/npm-package",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -13,7 +13,7 @@
     }
   },
   "scripts": {
-    "build": "tsc",
+    "build": "rollup -c",
     "prepare": "npm run build"
   },
   "files": [
@@ -29,11 +29,17 @@
   "author": "nashanunais",
   "license": "MIT",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/estree": "^1.0.5",
     "@types/node": "^22.5.4",
+    "rollup": "^4.21.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.2"
   },
   "dependencies": {
-    "@faker-js/faker": "^9.0.0"
+    "@faker-js/faker": "^9.0.0",
+    "tslib": "^2.7.0"
   }
 }
